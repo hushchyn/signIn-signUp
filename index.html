@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+  <form name="signUp" class="signUp">
+    <p class="pleaseSignIn">Pliase sign up</p>
+    <hr>
+    <div class="group firstName">
+      <input type="text" name="firstName" id="name" class="input" placeholder="" required>
+      <label for="name">First name</label>
+    </div>
+    <div class="group lastName">
+      <input type="text" name="lastName" id="lname" class="input" required>
+      <label for="lName">Last name</label>
+    </div>
+    <div class="group email">
+      <input type="email" name="email" id="email" class="input" required>
+      <label for="email">Email adress</label>
+      <p class="emailExist">This email is already exist</p>
+    </div>
+    <div class="group password">
+      <input type="text" name="password" id="pass" class="input" required>
+      <label for="pass">Password</label>
+    </div>
+    <button type="button" class="btn btn-primary">Sign up</button>
+    <button type="button" class="signInNow">Sign In now</button>
+  </form>
+  <form name="signIn" class="form-signIn">
+    <p class="title-form">Sign In</p>
+    <hr>
+    <div class="mb-3">
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        placeholder="Email adress..." name="email">
+    </div>
+    <div class="mb-3">
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="pass"
+        value="">
+    </div>
+    <p class="valueEmpty">Localstorage is empty</p>
+    <p class="incorrect">Incorrect password or email</p>
+    <button type="button" class="btn-signIn">Sign In</button>
+    <button type="button" class="signUnNow">Sign up now</button>
+  </form>
+
+  <div class="profile">
+    <img class="img" src="https://img.icons8.com/office/452/person-male.png" alt="">
+    <div class="info">
+    </div>
+    <button type="button" class="sign-Out">Sign Out</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
